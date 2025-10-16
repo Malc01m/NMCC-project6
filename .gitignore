@@ -1,0 +1,5 @@
+# .gitignore
+venv/
+.venv/
+venv-gpu/
+.venv-gpu/
