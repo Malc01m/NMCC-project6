@@ -20,6 +20,7 @@ model = nn.Sequential(OrderedDict([
 loss_fn = nn.MSELoss()
 
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+# If adding operations, add to dense1 layer input size to match
 op_map = {"add": [1, 0], "sub": [0, 1]}
 
 with open("add_data.csv", "r") as f:
